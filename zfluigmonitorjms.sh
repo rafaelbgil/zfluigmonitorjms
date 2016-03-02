@@ -2,10 +2,10 @@
 #Monitoramento Filas JMS
 #Autor: Rafael Benites Gil
 
-JBOSS_CLI="/fluig/jboss/bin/jboss-cli.sh" # Informar onde se encontra o executavel jboss-cli.sh .
+JBOSS_CLI="/fluig/jboss/bin/jboss-cli.sh" # Informar onde se encontra o executavel jboss-cli.sh, recomendacao: informar o executavel que fica dentro do diretorio de instalacao do jboss do fluig, ex: /fluig/jboss/bin/jboss-cli.sh .
 IP_JBOSS="127.0.0.1" # Informar o ip da interface de gerenciamento do jboss.
 PORTA_JBOSS="9999" # Informar porta de gerenciamento do jboss.
-JAVA_HOME="/fluig/jdk-64/" # Informar o diretorio da instalacao do java, recomendacao: informar o diretorio jdk que fica dentro do diretorio de instalacao do fluig, ex: /fluig/jdk-64
+JAVA_HOME="/fluig/jdk-64/" # Informar o diretorio da instalacao do java, recomendacao: informar o diretorio jdk que fica dentro do diretorio de instalacao do fluig, ex: /fluig/jdk-64 .
 PATH=$JAVA_HOME/bin:$PATH
 export PATH JAVA_HOME
 case $1 in
@@ -45,7 +45,6 @@ case $1 in
                 echo "# OPCOES:                                                                      #";
                 echo "--------------------------------------------------------------------------------"
                 echo "| -a : Exibe status da fila TOTVSTechAsyncQueue                                |"
-                echo "| -c : Exibe status da fila PortalCloudNotifyQueue                             |"
 				echo "| -d : Exibe status da fila FluigDeployQueue                                   |"
 				echo "| -e : Exibe status da fila ECMNotificationQueue                               |"
 				echo "| -h : Exibe status da fila TOTVSTechDeployQueue                               |"
