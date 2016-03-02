@@ -14,6 +14,7 @@ Atualmente o template monitora as seguintes filas:
 - TOTVSTechocialPostDeliveryQueue
 - TOTVSTechSocialQueue
 
+
 - Gera um gráfico unificado do consumo atual de todas as filas.
 - Possui triggers para alerta no caso de qualquer uma das filas atingir possuir mais do que 10 mensagens enfileiradas, isso pode ser ajustado diretamente e individualmente conforme a necessidade do ambiente.
 
